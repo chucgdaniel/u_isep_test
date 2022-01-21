@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- view -->
+    <record id='view_load_skill_form' model='ir.ui.view'>
+        <field name='name'>u_isep_test.load_skill.form</field>
+        <field name='model'>u_isep_test.load_skill</field>
+        <field name='arch' type='xml'>
+            <form string='Seleccione skills'>
+                <sheet>
+                    <group>
+                        <field nolabel="1" name="skills" widget="many2many_checkboxes"/>
+                        <field name="partner_id" invisible="1"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Aceptar" name="load_skills" type="object" class="oe_highlight"/>
+                    <button string="Cancelar" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- tree -->
+    <record id='view_skill_tree' model='ir.ui.view'>
+        <field name='name'>u_isep_test.skill.tree</field>
+        <field name='model'>u_isep_test.skill</field>
+        <field name='arch' type='xml'>
+            <tree string='Lenguajes o herramientas'>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <!-- form -->
+    <record id='view_skill_form' model='ir.ui.view'>
+        <field name='name'>u_isep_test.skill.form</field>
+        <field name='model'>u_isep_test.skill</field>
+        <field name='arch' type='xml'>
+            <form string='Lenguajes o herramientas'>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="active" invisible="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- action -->
+    <record id='open_skill_action' model='ir.actions.act_window'>
+        <field name='name'>Lenguajes o herramientas</field>
+        <field name='res_model'>u_isep_test.skill</field>
+        <field name='view_mode'>tree,form</field>
+        <field name='view_id' ref='view_skill_tree'/>
+    </record>
+    <!-- menu -->
+    <menuitem
+        id="skill_menu"
+        name="Lenguajes o herramientas"
+        action="open_skill_action"
+        parent="u_isep_test.level_experience_menu"
+        sequence="2"
+        groups="u_isep_test.group_manager_experience"
+    />
+</odoo>

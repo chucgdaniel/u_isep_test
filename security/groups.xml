@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!--Category-->
+    <record model="ir.module.category" id="module_category_experience">
+        <field name="name">Experiencia</field>
+        <field name="description">Permisos para experiencia en contacto</field>
+        <field name="sequence">100</field>
+    </record>
+       
+    <!--Groups-->
+    <record model="res.groups" id="group_user_experience">
+        <field name="name">Usuario</field>
+        <field name="category_id" ref="module_category_experience"/>
+    </record>
+
+    <record model="res.groups" id="group_report_experience">
+        <field name="name">Reportes</field>
+        <field name="category_id" ref="module_category_experience"/>
+    </record>
+
+    <record model="res.groups" id="group_massive_experience">
+        <field name="name">Agregado masivo</field>
+        <field name="category_id" ref="module_category_experience"/>
+    </record>
+
+    <record model="res.groups" id="group_manager_experience">
+        <field name="name">Administrador</field>
+        <field name="category_id" ref="module_category_experience"/>
+    </record>
+
+</odoo>

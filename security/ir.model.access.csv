@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+group_base_user_experience,group_user_experience,model_u_isep_test_experience,base.group_user,1,0,0,0
+group_base_user_skill,group_user_skill,model_u_isep_test_skill,base.group_user,1,0,0,0
+group_user_experience,group_user_experience,model_u_isep_test_experience,u_isep_test.group_user_experience,1,1,1,1
+group_user_skill,group_user_skill,model_u_isep_test_skill,u_isep_test.group_user_experience,1,0,0,0
+group_manager_experience,group_user_experience,model_u_isep_test_experience,u_isep_test.group_manager_experience,1,1,1,1
+group_manager_skill,group_user_skill,model_u_isep_test_skill,u_isep_test.group_manager_experience,1,1,1,1
+group_report_skill,group_user_skill,model_u_isep_test_skill,u_isep_test.group_report_experience,1,0,0,0

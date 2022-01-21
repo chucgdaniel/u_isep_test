@@ -1,0 +1,18 @@
+<odoo>
+    <!-- Some skills -->
+    <record id="skill_php" model="u_isep_test.skill">
+        <field name="name">Php</field>
+    </record>
+    <record id="skill_python" model="u_isep_test.skill">
+        <field name="name">Python</field>
+    </record>
+    <record id="skill_css" model="u_isep_test.skill">
+        <field name="name">Css</field>
+    </record>
+    <record id="skill_laravel" model="u_isep_test.skill">
+        <field name="name">Laravel</field>
+    </record>
+    <record id="skill_git" model="u_isep_test.skill">
+        <field name="name">Git</field>
+    </record>
+</odoo>
